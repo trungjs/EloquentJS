@@ -1,35 +1,25 @@
 function range(start,end) {
-    let rangeArray = []
-    for(i=0;i<end;i++) {
-        rangeArray[i] = start + i;
-    }
-    return rangeArray;
+
+    let rangeArray = [];
+
+    if(start <= end) {
+        for(i=start;i<=end;i++) {
+            rangeArray.push(i);
+        }
+   }
+
+    if(start > end) {
+        for(i=start;i>=end;i--) {
+            rangeArray.push(i);
+        }
+   }
+   return rangeArray;
 }
 
-function sum(...numbers) {
+function sum(...arr) {
     let result;
-    for(i=0;i<numbers.length;i++) {
-        result += numbers[i];
+    for(i=0;i<arr;i++) {
+        result += arr[i];
     }
+    return result;
 }
-
-function range(start,end,step=1) {
-    let rangeArray=[];
-    if(start<end) {
-        for(i=0;i<end;i++) {
-            rangeArray.push(start+i);
-
-        }
-        return rangeArray;
-    } else if(start>end) {
-        for(i=0;i<start;i++) {
-            rangeArray.push(start-i);
-        }
-    } else {
-        rangeArray.push(start);
-        return rangeArray;
-    }
-
-}
-
-   
