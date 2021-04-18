@@ -23,3 +23,24 @@ function sum(...arr) {
     }
     return result;
 }
+
+//solution with optional step
+
+function range(start,end,step=1) {
+
+    let rangeArray = [];
+
+    if(start <= end) {
+        for(i=start;i<=end;i+=Math.abs(step)) {
+            rangeArray.push(i);
+            
+        }
+   }
+
+    if(start > end) {
+        for(i=start;i>=end;i-=Math.abs(step)) {
+            rangeArray.push(i);
+        }
+   }
+   return rangeArray;
+}
