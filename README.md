@@ -1,2 +1,2 @@
 # EloquentJS
-Code Solutions to Eloquent JS.
+Code Solutions to Eloquent JS
