@@ -1,5 +1,5 @@
 function reverseArray(arr){
-    let rArr=[];
+    let rArr={};
     for(i=0;i<arr.length;i++) {
         rArr.unshift(arr[i]);
     }
