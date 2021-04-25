@@ -5,15 +5,11 @@ class Vec {
     }
     
     plus(vector) {
-        vector.x = this.x + vector.x;
-        vector.y = this.y + vector.y;
-        return {x: vector.x, y: vector.y};
+        return {x: this.x + vector.x, y: this.y + vector.y};
     }   
 
     minus(vector) {
-        vector.x = this.x - vector.x;
-        vector.y = this.y - vector.y;
-        return {x: vector.x, y: vector.y};
+        return {x: this.x - vector.x, y: this.y - vector.y};
     }
 
     get length() {
@@ -21,4 +17,3 @@ class Vec {
     }
 }
 
-console.log(new Vec(1, 2).plus(new Vec(2, 3)));
